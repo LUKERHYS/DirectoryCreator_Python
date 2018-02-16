@@ -1,16 +1,14 @@
 import os
 os.chdir('C:\Users\GC4C-0013\Desktop\New folder')
-batches = []
+batches = ('')
+prefix = "Batch_"
 for i in range(1):
 	batches = raw_input("How many batches are you importing?: ")
-	batchNames = "batch_" + batches
+	#input_list = batches.split()
+	#input_list = [int(a) for a in input_list]
+	batchNames = prefix + batches #input_list
+#print batchNames
 os.mkdir(batchNames)
-
-
-
-
-
-
 
 
 
