@@ -1,11 +1,12 @@
 # Imports Here
 import os
 
-# Folder Creation Destination
+# Directory Creation Location
 os.chdir('/Users/lukerhys/Desktop/test')
 
-# Custom Objects
+# Container for input
 batches = ('')
+# Directory Prefix can be anything you want
 prefix = "Batch_"
 
 # For loop to prompt human input of directory names
