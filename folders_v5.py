@@ -6,8 +6,9 @@ os.chdir('/Users/lukerhys/Desktop/test')
 prefix = "Batch_"
 # Input string as interger  - converted to range
 batch_num = int(input("How many batches are you importing?:  "))
+output = batch_num + 1
 # For loop to add the batch prefix and create the directories
-for f in range(1, batch_num, 1):
+for f in range(1, output, 1):
 	fileName = prefix + str(f)
 	if os.path.exists('/Users/lukerhys/Desktop/test/' + fileName):
 		print("Err: File already exists. Please try again.")
