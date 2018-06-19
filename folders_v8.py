@@ -20,5 +20,11 @@ for f in range(start_num, output, 1):
 	fileName = prefix + "_" + str(f)
 	if os.path.exists(fileName):
 		print("Err: File already exists. Please try again.")
-	else:
+	elif:
+		print("Do you want to create" + fileName)
+		answer = raw_input("Y / N: ")
+
+
+
+
 		os.mkdir(fileName)
