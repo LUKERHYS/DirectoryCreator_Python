@@ -1,5 +1,6 @@
 # Imports Here
 import os
+import ctypes
 
 # Directory Creation Location
 os.chdir(raw_input("Where would you like to create the directories?: "))
@@ -19,10 +20,8 @@ output = batch_num + start_point + 1
 for f in range(start_num, output, 1):
 	fileName = prefix + "_" + str(f)
 	if os.path.exists(fileName):
-		def Mbox(title, text, style):
-    return ctypes.windll.user32.MessageBoxW(0, text, title, style)
-	Mbox('Your title', 'Your text', 1)
-		print("Err: File already exists. Please try again.")
+		ctypes.windll.user32.MessageBoxW(0, "Err: File already exists.", "Please try again.", 1)
+		#print("Err: File already exists. Please try again.")
 	else:
 		print("Do you want to create" + fileName)
 		answer = raw_input("Y / N: ")
