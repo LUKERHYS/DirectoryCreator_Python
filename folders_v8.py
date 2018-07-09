@@ -19,6 +19,9 @@ output = batch_num + start_point + 1
 for f in range(start_num, output, 1):
 	fileName = prefix + "_" + str(f)
 	if os.path.exists(fileName):
+		def Mbox(title, text, style):
+    return ctypes.windll.user32.MessageBoxW(0, text, title, style)
+	Mbox('Your title', 'Your text', 1)
 		print("Err: File already exists. Please try again.")
 	else:
 		print("Do you want to create" + fileName)
